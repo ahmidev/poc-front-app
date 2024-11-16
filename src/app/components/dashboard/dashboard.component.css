@@ -1,0 +1,16 @@
+.dashboard {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .notification {
+    margin-top: 20px;
+  }
+  
+  .envelope {
+    cursor: pointer;
+    font-size: 20px;
+    color: #4caf50;
+    text-decoration: underline;
+  }
+  

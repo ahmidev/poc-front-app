@@ -1,0 +1,46 @@
+/* app.component.css */
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #eeb38b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #eeb38b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  
+
+header.client, footer.client {
+    background-color: #007bff; 
+  }
+  
+  header.support, footer.support {
+    background-color: #28a745; 
+  }

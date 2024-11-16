@@ -1,0 +1,23 @@
+   <div class="chat-container">
+    <h2>Chat - Rôle : {{ role }}</h2>
+    <div class="chat-messages">
+      <div
+        *ngFor="let message of messages"
+        [ngClass]="{ 'my-message': message.sender === role, 'other-message': message.sender !== role }"
+        class="message"
+      >
+      <strong>{{ message.sender === role ? 'Moi' : message.sender }} :</strong>
+      <span>{{ message.content }}</span>
+      <span class="timestamp">{{ formatTimestamp(message.timestamp!!) }}</span>
+      </div>
+    </div>
+    <div class="chat-input">
+      <input
+        type="text"
+        [(ngModel)]="newMessage"
+        placeholder="Écrivez un message..."
+      />
+      <button (click)="sendMessage()">Envoyer</button>
+    </div>
+  </div>
+  
